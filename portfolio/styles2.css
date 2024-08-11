@@ -1,0 +1,198 @@
+body {
+    font-family: "Rajdhani", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #FFDFD6;
+    color: #333333;
+    font-weight: 600;
+  font-style: normal;
+}
+
+header {
+    background: rgba(105, 79, 142, 0.95);
+    color:#FFFFFF;
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    position: fixed; /* Fix header at the top */
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background 0.3s ease;
+}
+
+header.scrolled {
+    background: rgba(105, 79, 142, 0.95); /* Slightly less transparent when scrolled */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #FFFFFF;
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    font-family: "Rajdhani", sans-serif;
+}
+
+nav ul li {
+    margin: 0 1em;
+    font-family: "Rajdhani", sans-serif;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #B692C2;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+.content{
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    margin: 20px 0;
+}
+
+section {
+    padding: 50px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    margin: 25px 50px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 0px;
+    color: #694F8E;
+    padding: 0%;
+   
+}
+
+section .content {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+   
+    font-family: "Rajdhani", sans-serif;
+}
+
+section .content p {
+    flex: 1;
+    
+    font-family: "Rajdhani", sans-serif;
+}
+
+section .profile-pic {
+    max-width: 250px;
+    border-radius: 50%;
+    margin-left: 20px;
+    float: right;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project {
+    background: #FFDFD6;
+    padding: 20px;
+    border-radius: 20px; /* Rounded edges */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* Updated shadow */
+    width: 45%; /* Adjust width to ensure two projects fit per row */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center items horizontally */
+    position: relative; /* Allow for absolute positioning of description */
+    overflow: hidden; /* Hide overflow content */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+    font-family: "Rajdhani", sans-serif;
+}
+
+.project h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #E3A5C7;
+    text-align: center;
+    
+}
+
+.project p {
+    margin: 0;
+    text-align: center;
+    transition: opacity 0.3s ease;
+    font-family: 'Georgia', serif;
+    font-family: "Rajdhani", sans-serif;
+}
+
+.project-pic {
+    width: 200px;
+    height: 180px; /* Make the project image square */
+    object-fit: cover; /* Ensure the image covers the box without stretching */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.project-text {
+    flex: 1; /* Ensure the text takes up the remaining space */
+    display: flex;
+    flex-direction: column; /* Arrange the text vertically */
+    justify-content: center; /* Center the text vertically */
+    font-family: "Rajdhani", sans-serif;
+}
+
+footer {
+    background: #694F8E;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    color: #B692C2;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin-top: 150px; /* Increase top margin to create more space from the header */
+}
+
+@media (max-width: 768px) {
+    .project {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+.rajdhani-semibold {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
